@@ -11,9 +11,23 @@ for(let i=0;i<gridsize*gridsize;i++){
         div.classList.add("grid")
         div.style.width=`${size}px`;
         div.style.height=`${size}px`;
+        colors("orange")
+        function colors(color){
         div.addEventListener("mouseover",()=>{
-                div.style.backgroundColor="black"
+                div.style.backgroundColor=color
         });
+       }
+        const ers=document.querySelector(".btn")
+                ers.addEventListener("click",()=>{
+                        colors("white");
+                })
+        
+        const btn=document.querySelector(".btn.reset")
+        btn.addEventListener("click",()=>{
+                div.style.backgroundColor="white";
+        })
         temp.appendChild(div)
+
+        
         
 }

@@ -19,3 +19,17 @@ body {
     border: 1px solid black;
     margin: 0;
 }
+
+.adds{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:30px;
+}
+.btn{
+    margin-top: 15px;
+    border: 2px solid;
+    background-color: blue;
+    padding: 2px;
+    font-family: 'Times New Roman', Times, serif;
+}
